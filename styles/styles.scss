@@ -26,7 +26,6 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     background-color: black;
     color: white;
@@ -40,6 +39,19 @@ body {
       flex-direction: column;
       align-items: center;
       text-align: center;
+
+      &_text {
+        max-width: 574px;
+        width: 100%;
+
+        & h1 {
+          @extend %heading_1;
+        }
+
+        & p {
+          @extend %paragraph_text;
+        }
+      }
   }
 
   .header {
@@ -47,6 +59,8 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-top: 8vh;
+      margin-bottom: 15vh;
   }
   
   .overlay {
@@ -92,6 +106,7 @@ body {
   }
 
   .topnav {
+    @extend %nav_text;
     overflow: hidden;
     background-color: transparent;
     list-style-type: none;
