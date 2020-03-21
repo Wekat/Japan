@@ -40,6 +40,7 @@ body {
       max-width: 864px;
       height: 100vh;
       margin: auto;
+      margin-top: 4vw;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -48,6 +49,7 @@ body {
       &_text {
         max-width: 574px;
         width: 100%;
+        margin-top: 20vw;
 
         & h1 {
           @extend %heading_1;
@@ -80,12 +82,13 @@ body {
   .logo {
     font-size: 30px;
     width: 111px;
+    display: flex;
+    align-items: center;
 
     & span {
       font-family: Poppins;
       font-style: normal;
       font-weight: 500;
-      line-height: 102px;
       letter-spacing: -2px;
       margin-left: 10px;
     }
@@ -174,6 +177,7 @@ body {
   @media screen and (max-width: 446px) {
     .topnav {
       width: 100%;
+      justify-content: flex-end;
     }
 
     .topnav a {
@@ -192,6 +196,10 @@ body {
       position: absolute;
       right: 0;
       top: 0;
+    }
+
+    .section {
+      margin-top: auto;
     }
 
     .section_text h1 {
